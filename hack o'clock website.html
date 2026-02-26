@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hack O'Clock</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:#f4f6f8;color:#2c3e50}
+    header{display:flex;justify-content:space-between;align-items:center;padding:15px 40px;background:#2c3e50;color:white}
+    nav a{color:white;text-decoration:none;margin-left:20px}
+    .hero{padding:60px 20px;text-align:center}
+    .hero h2{font-size:40px;margin-bottom:10px}
+    .section{padding:40px 20px}
+    .cards{display:flex;gap:15px;flex-wrap:wrap}
+    .card{flex:1 1 200px;background:#dfe6e9;padding:15px;border-radius:8px}
+    button{padding:10px 20px;border:none;background:#0984e3;color:white;border-radius:5px;cursor:pointer}
+    footer{text-align:center;padding:15px;background:#2c3e50;color:white}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hack O'Clock</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#events">Events</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#register">Register</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hack O'Clock</h2>
+    <p>Build. Innovate. Collaborate.</p>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About</h2>
+    <p>Hack O'Clock is a 24-hour hackathon for students to come together and build amazing projects.</p>
+  </section>
+
+  <section class="section" id="events">
+    <h2>Events</h2>
+    <div class="cards">
+      <div class="card"><h3>AI Challenge</h3><p>Work on AI solutions</p></div>
+      <div class="card"><h3>Game Development</h3><p>Create simple games</p></div>
+      <div class="card"><h3>Web Development</h3><p>Build useful websites</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="schedule">
+    <h2>Schedule</h2>
+    <p>Start: 10:00 AM</p>
+    <p>End: Next Day 10:00 AM</p>
+  </section>
+
+  <section class="section" id="register">
+    <h2>Register</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Name" required><br><br>
+      <input type="email" placeholder="Email" required><br><br>
+      <button>Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 Hack O'Clock</p>
+  </footer>
+
+  <script>
+    function submitForm(e){
+      e.preventDefault();
+      alert("Registered Successfully!");
+    }
+  </script>
+</body>
+</html>
